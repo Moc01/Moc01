@@ -503,3 +503,265 @@ html {
     transition: transform 0.35s, -webkit-transform 0.35s;
     opacity: 0;
 }
+
+
+
+.experience-section .work {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+/*时间轴*/
+.others-section p {
+    color: white;
+}
+
+.others-section .section-title {
+    color: white;
+}
+
+.others-section {
+    background: url();
+    background-repeat: no-repeat !important;
+    margin-top: 30px !important;
+    padding-top: 40px !important;
+    text-align: center !important;
+    background-attachment: relative !important;
+    background-position: center center !important;
+    min-height: 800px !important;
+    width: 100% !important;
+    background-size: 100% !important;
+    background-size: cover !important;
+    position: relative !important;
+}
+
+.others-section::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.others-section .section-title {
+    margin-bottom: 60px;
+}
+
+.others-section li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.others-section .container .content-timeline-border {
+    border-radius: 5px;
+    margin: 0 15px 0 15px;
+    position: relative;
+    overflow: hidden;
+    /*background: #cccaef;*/
+}
+
+.others-section .container .timeline-left,
+.container .timeline-right {
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+
+.others-section .container .timeul {
+    list-style: none;
+    padding: 0;
+}
+
+.others-section .container .content-timeline-border::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: #434343;
+}
+
+.others-section .container .timeul>li {
+    width: 100%;
+    margin-bottom: 200px;
+
+}
+
+.others-section .container .timeline-right li:last-child {
+    margin-bottom: 0px;
+}
+
+.others-section .container .timeline-left {
+    margin-top: 20px;
+}
+
+.others-section .container .timeline-right {
+    margin-top: 210px;
+}
+
+.others-section .container .timeline-right>span,
+.container .timeline-left>span {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    border: 3px solid #cd7070;
+    background: #fff;
+}
+
+.others-section .container .timeline-left>span {
+    top: 0px;
+}
+
+.others-section .container .timeul span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    border: 3px solid #cd7070;
+    background: #fff;
+}
+
+.others-section .container .content-timeline-border .time-content {
+    border-top: 3px solid #cd7070;
+    position: relative;
+    border-radius: 18px;
+    top: 8px;
+    padding: 10px 20px;
+}
+
+.others-section .container .content-timeline-border .time-title {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid #cd7070;
+    background: #cd7070;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.others-section .container .content-timeline-border p {
+    line-height: 23px;
+    font-size: smaller;
+}
+
+.others-section .container .content-timeline-border h5 {
+    text-align: center;
+    color: rgb(233 195 9);
+    padding: 0;
+    margin: 9px 0;
+}
+
+.contact-section .card {
+    background-color: white !important;
+}
+
+.contact-section .msg {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+
+.input-group-addon:not(:last-child) {
+    border-right: 0px;
+}
+
+.form-control+.input-group-addon:not(:first-child) {
+    border-left: 0px;
+}
+
+.btn-link {
+    color: black !important;
+}
+
+.my-tooltip {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.my-tooltip .my-tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.my-tooltip .my-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.my-tooltip:hover .my-tooltiptext {
+    visibility: visible;
+}
+
+.my-tooltip .my-tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.my-tooltip:hover .my-tooltiptext {
+    opacity: 1;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #2B2F3E;
+    ;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 5px;
+    color: #f8f9fab0;
+    top: 20px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
