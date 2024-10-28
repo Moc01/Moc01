@@ -29,3 +29,164 @@ html {
     animation: 3s ease 0s normal none infinite running bounce;
 }
 
+.page-header .j-icon:hover {
+    transform: scale(1.20);
+
+}
+
+.page-header .bg-primary {
+    background-color: rgba(0, 0, 0, .15) !important;
+    transition: 0.4s;
+}
+
+.navbar-toggler {
+    z-index: 3;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.page-header .navbar .navbar-collapse li {
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 2;
+
+}
+
+.page-header .navbar .navbar-collapse li:hover {
+    background: rgb(26, 145, 65);
+    transition: 0.55s;
+    z-index: 2;
+}
+
+.page-header .navbar {
+    position: fixed;
+    z-index: 10000 !important;
+    width: 100%;
+}
+
+.profile-page .page-header {
+    position: relative;
+    min-height: 650px;
+    max-height: 1024px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/intro-bg.jpg);
+    background-position: center center !important;
+    background-size: cove !important;
+}
+
+.page-header-mask:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.page-header-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.profile-page .page-header-content {
+    position: relative;
+    max-height: 600px;
+    min-height: 350px;
+}
+
+
+.page-header .left-content {
+    position: relative;
+    min-height: 650px;
+}
+
+.personalImage {
+    position: relative;
+    width: auto;
+    height: 250px;
+    text-align: center;
+    top: 44px;
+}
+
+.personalImage a {
+    position: relative;
+}
+
+.personalImage a:before {
+    content: "";
+    border: 15px solid rgb(117 49 171);
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    -webkit-animation: pulsate 1.6s ease-out;
+    animation: pulsate 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0.0;
+    z-index: 99;
+}
+
+.personalImage img {
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.personalImage a:hover img {
+    transform: scale(1.06, 1.06);
+}
+
+.personalImage a:hover:before {
+    animation: none;
+}
+
+
+.page-header .name {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.page-header .motto {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.page-header .motto::after {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    height: 20px;
+    margin-left: 5px;
+    content: " ";
+    -webkit-animation: blink .5s step-end infinite alternate;
+    animation: blink .5s step-end infinite alternate;
+    border-right: 2px solid;
+}
+
+
+
+.page-header .self-intro {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: smaller;
+    font-family: serif, 'Times New Roman';
+    display: none;
+}
+
