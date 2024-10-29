@@ -16,3 +16,6 @@ This project is based on the following open-source libs and projects:
 [burc-li/timeLine](https://github.com/burc-li/timeLine)
 
 [VincentGarreau/particles.js: A lightweight JavaScript library for creating particles (github.com)](https://github.com/VincentGarreau/particles.js)
+
+## Why MIT License
+The MIT License is ideal for this portfolio website template because it provides maximum flexibility for other developers to freely use, modify, and distribute the code. Its permissive nature aligns perfectly with the goal of being an easily customizable template.
