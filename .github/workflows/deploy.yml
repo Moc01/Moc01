@@ -27,7 +27,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4   # Use the latest version of the deploy action
       with:
-        branch: gh-pages              # Target branch for GitHub Pages
+        branch: main            # Target branch for GitHub Pages
         folder: .                     # Deploy everything in the root folder
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
