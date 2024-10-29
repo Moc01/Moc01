@@ -1,17 +1,17 @@
 var config = {
-    /*Configure your basic information here, all data should be strings*/
+    /*Configure basic information here, all data should be strings*/
     name: "Skylar Rivers",
     sex: "Male",
     age: "25",
     phone: "123-456-7890",
     email: "skylar.rivers@example.com",
     address: "New York City, USA",
-    instagram: "@skylar.codes",
+    website: "skylar.codes",
     log: "SkylarRivers",
     excpect_work: "Full Stack Developer",
 
 
-    /*Configure your motto collection for the homepage*/
+    /*Configure motto collection for the homepage*/
     motto: [
         "Tomorrow may not be better, but believe that a better tomorrow will come.",
         "Where there's a will, there's a way.",
@@ -30,21 +30,21 @@ var config = {
     ],
 
 
-    /*Configure your greeting message here, you can use HTML tags*/
+    /*Configure greeting message here, you can use HTML tags*/
     welcome: "Hello World!<br>" +
              "Welcome to my portfolio<br>" +
              "Hi, I'm Skylar Rivers, a Full Stack Developer<br>" +
              "Nice to meet you!",
 
 
-    /*Configure your about me information here, you can use HTML tags*/
+    /*Configure about me information here, you can use HTML tags*/
     about: "<p>Hello! I'm Skylar Rivers, a passionate Full Stack Developer with a strong foundation in modern web technologies.</p>" +
         "<p>I have extensive experience in both frontend and backend development, with a solid understanding of computer science fundamentals. I'm a team player with strong problem-solving skills and the ability to work independently. I'm committed to delivering high-quality code and maintaining excellent communication with team members.</p>" +
         "<p>I look forward to connecting with you!</p>",
 
 
     /** 
-    * Configure your skills here
+    * Configure skills here
     * ["Skill", Proficiency, "Color"]
     */  
     skills: [
@@ -57,7 +57,7 @@ var config = {
     ],
 
 
-    /*Configure your skills description here, you can use HTML tags*/
+    /*Configure skills description here, you can use HTML tags*/
     skills_description: "<ul>" +
         "     <li>Strong knowledge of computer science fundamentals and algorithms.</li>" +
         "     <li>Expertise in JavaScript and modern frameworks.</li>" +
@@ -74,18 +74,21 @@ var config = {
 
 
     /**
-     * Configure your portfolio here
+     * Configure portfolio here
      * ["img", "url", "ProjectName", "brief"]
      */
     portfolio: [
-        ["./images/pro-1.png", "https://example.com/blog", "Personal Blog", "A tech blog built with Next.js<br>Updated regularly"],
-        ["./images/pro-2.png", "https://github.com/skylarrivers/project1", "E-commerce Platform", "Full-stack e-commerce solution<br>2023/5/15"],
-        ["./images/pro-3.png", "https://github.com/skylarrivers/project2", "Task Management App", "React Native mobile application"]
+        ["./images/blog.jpg", "https://dropinblog.com/blog/best-personal-blog-examples/", "Personal Blog", "A tech blog built with Next.js<br>Updated regularly"],
+        ["./images/e-commerce.jpg", "https://en.wikipedia.org/wiki/E-commerce", "E-commerce Platform", "Full-stack e-commerce solution<br>2023/5/15"],
+        ["./images/todo.jpg", "https://zapier.com/blog/best-todo-list-apps/", "Task Management App", "React Native task management application"],
+        ["./images/mobile-app.jpg", "https://en.wikipedia.org/wiki/Mobile_app", "Mobile App", "A mobile app built with React Native"],
+        ["./images/AI-chat.jpg", "https://github.com/skylarrivers/project1", "AI Chatbot", "AI Integration solution<br>2024/5/15"],
+        ["./images/social.jpg", "https://github.com/skylarrivers/project2", "Social Media App", "Private messaging application"]
     ],
 
 
     /**
-     * Configure your work experience here
+     * Configure work experience here
      * ["Date", "Position", "Description"]
      */
     work: [
@@ -104,7 +107,7 @@ var config = {
 
 
     /**
-     * Configure your achievements here
+     * Configure achievements here
      * ["Date", "Achievement", "Description"]
      */
     others: [
@@ -116,15 +119,12 @@ var config = {
 
 
     /**
-     * Configure your social media links here
+     * Configure social media links here
      * ["img", "url", "desc"]
      */
     icon: [
-        ["./svg/github.svg", "https://github.com/skylarrivers", "My GitHub Profile"],
-        ["./svg/linkedin.svg", "https://linkedin.com/in/skylarrivers", "My LinkedIn Profile"],
-        ["./svg/instagram.svg", "https://instagram.com/skylar.codes", "My Instagram Profile"],
-        ["./svg/blog.svg", "https://blog.skylarrivers.com", "My Tech Blog"],
-        ["./svg/twitter.svg", "https://twitter.com/skylarrivers", "My Twitter Profile"]
+        ["./svg/linkedin.svg", "https://linkedin.com/in/yourprofile", "My LinkedIn Profile"],
+        ["./svg/github.svg", "https://github.com/yourusername", "My GitHub Profile"]
     ],
 
 
@@ -132,9 +132,9 @@ var config = {
     url: [
         //background, avatar, portfolio background, other background
         "./images/intro-bg.jpg",
-        "./images/avatar.jpg",
-        "./images/work-bk.png",
-        "./images/4.jpg"
+        "./images/profile.jpg",
+        "./images/work-bg.jpg",
+        "./images/time.jpg"
     ]
 
 }
