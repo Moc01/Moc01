@@ -25,7 +25,7 @@ jobs:
 
     # Step 3: Deploy to GitHub Pages using the deployment action
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.4.3   # Use the latest version of the deploy action
+      uses: JamesIves/github-pages-deploy-action@v4   # Use the latest version of the deploy action
       with:
         branch: gh-pages              # Target branch for GitHub Pages
         folder: .                     # Deploy everything in the root folder
