@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta target="_blank">
-    <link rel="shortcut icon" href="./images/2.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/animate.css">
@@ -198,7 +198,8 @@
                 <h2 class="section-title" data-aos="fade-up" data-aos-offset="10">Portfolio</h2>
                 <div class="container">
                     <div class="ml-auto mr-auto portfolio-section-main-container">
-                        <div class="row">
+                        <!-- Remove these static rows -->
+                        <!-- <div class="row">
                             <div class="col-md-4">
                                 <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                                     <a href="#web-development" title="Click for details">
@@ -212,39 +213,11 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                    <a href="#web-development" title="Click for details">
-                                        <figure class="portfolio-section-main">
-                                            <img src="./images/project2.jpg" alt="Project 2" />
-                                            <figcaption>
-                                                <div class="h4">Mobile App</div>
-                                                <p>Cross-platform mobile application using Flutter</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                    <a href="#web-development" title="Click for details">
-                                        <figure class="portfolio-section-main">
-                                            <img src="./images/project3.jpg" alt="Project 3" />
-                                            <figcaption>
-                                                <div class="h4">AI Chat Bot</div>
-                                                <p>Machine learning powered chatbot using Python</p>
-                                            </figcaption>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                            ... other static portfolio items ...
+                        </div> -->
                     </div>
                 </div>
-
             </div>
-
-
         </section>
 
         <section class="experience-section" id="work">
@@ -269,6 +242,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <section class="others-section" id="others">
             <div class="container" data-aos="fade-up" data-aos-offset="100">
@@ -367,28 +342,15 @@
 
                                         <dic class="card-body">
                                             <div class="container text-center icon-insert">
-
-                                                <!-- <a class="my-tooltip" href="#" title="访问我的CSDN主页">
-                                                    <img src="./svg/csdn.svg" alt="我的CSDN主页">
-
-                                                    <span class="my-tooltiptext">我的CSDN主页</span>
-                                                </a>
-
-                                                <a class="my-tooltip" href="#" title="访问我的CSDN主页">
-                                                    <img src="./svg/github.svg" alt="">
-                                                    <span class="my-tooltiptext">我的Github主页</span>
-                                                </a> -->
-
-                                                <a class="my-tooltip" href="#" title="Visit my CSDN profile">
-                                                    <img src="./svg/csdn.svg" alt="My CSDN Profile">
-                                                    <span class="my-tooltiptext">My CSDN Profile</span>
+                                                <a class="my-tooltip" href="#" title="Visit my Medium profile">
+                                                    <img src="./svg/medium.svg" alt="My Medium Profile">
+                                                    <span class="my-tooltiptext">My Medium Profile</span>
                                                 </a>
 
                                                 <a class="my-tooltip" href="#" title="Visit my GitHub profile">
                                                     <img src="./svg/github.svg" alt="My GitHub Profile">
                                                     <span class="my-tooltiptext">My GitHub Profile</span>
                                                 </a>
-
                                             </div>
                                         </dic>
                                     </div>
@@ -409,7 +371,22 @@
     
 </body>
 
-<script src="./JS/main.js"></script>
+<script src="./JS/jquery-3.6.0.js">
+</script>
+<script src="./JS/popper.min.js">
+</script>
+<script src="./JS/bootstrap.min.js">
+</script>
+
+<script src="./JS/particles.min.js"></script>
+<script src="./JS/app.js"></script>
+<script src="./JS/aos.js"></script>
+<script src="./JS/personal-info-main.js"></script>
+<script>
+    AOS.init();
+</script>  
+
+
 
 </html>
 
