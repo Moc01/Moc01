@@ -386,7 +386,7 @@ html {
 }
 
 .portfolio-section {
-    background: url(../images/portfolio-bg.jpg) no-repeat center top;
+    background: url(https://pic4.zhimg.com/80/v2-1acf703173c88099a01ead4aa66c0633_1440w.jpg) no-repeat center top;
     margin-top: 30px;
     padding-top: 50px;
     text-align: center !important;
@@ -504,7 +504,98 @@ html {
     opacity: 0;
 }
 
+@media (max-width: 480px) {
+    .gallery figure.portfolio-section-main .h4 {
+        font-size: 20px;
+    }
+    .gallery figure.portfolio-section-main p {
+        font-size: 14px;
+    }
+}
 
+.gallery figcaption .container {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.gallery figure.portfolio-section-main p {
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+    opacity: 0;
+}
+
+.gallery figure.portfolio-section-main img,
+.gallery figure.portfolio-section-main .h4 {
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
+}
+
+.gallery figure.portfolio-section-main img,
+.gallery figure.portfolio-section-main figcaption::before,
+.gallery figure.portfolio-section-main figcaption::after,
+.gallery figure.portfolio-section-main p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    /* transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s; */
+}
+
+.gallery figure.portfolio-section-main:hover img {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.gallery figure.portfolio-section-main:hover figcaption::before,
+.gallery figure.portfolio-section-main:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.gallery figure.portfolio-section-main:hover figcaption:before {
+    background: rgba(27, 23, 23, 0.5);
+}
+
+.gallery figure.portfolio-section-main:hover .h4,
+.gallery figure.portfolio-section-main:hover p,
+.gallery figure.portfolio-section-main:hover button {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: #fff;
+}
+
+.gallery figure.portfolio-section-main:hover figcaption::after,
+.gallery figure.portfolio-section-main:hover .h4,
+.gallery figure.portfolio-section-main:hover p,
+.gallery figure.portfolio-section-main:hover img {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+.experience-section .card {
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}
+
+.experience-section .col-md-3 .card-body {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .experience-section .card {
+        text-align: center;
+    }
+}
 
 .experience-section .work {
     font-size: 20px;
@@ -523,7 +614,7 @@ html {
 }
 
 .others-section {
-    background: url();
+    background: url(https://pic1.zhimg.com/v2-956295fc660aee9127c9ecb4b9b32090_b.jpg);
     background-repeat: no-repeat !important;
     margin-top: 30px !important;
     padding-top: 40px !important;
@@ -666,6 +757,69 @@ html {
     margin: 9px 0;
 }
 
+@media screen and (max-width: 900px) {
+
+    .others-section .container .timeline-left,
+    .container .timeline-right {
+        float: none;
+        width: 100%;
+    }
+
+    .others-section .container .timeline-right {
+        margin-top: 13px;
+    }
+
+    .others-section .container .content-timeline-border::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        transform: translateX(-50%);
+        width: 3px;
+        height: 100%;
+        background: #434343;
+    }
+
+    .others-section .container .timeline-right>span,
+    .container .timeline-left>span {
+        position: absolute;
+        left: 10px;
+        bottom: 0px;
+        transform: translateX(-50%);
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+        border: 3px solid #cda670;
+        background: #fff;
+    }
+
+    .others-section .container .timeul span {
+        position: absolute;
+        left: 10px;
+        transform: translateX(-50%);
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+        border: 3px solid #cda670;
+        background: #fff;
+    }
+
+    .others-section .container .content-timeline-border .time-content {
+        border-top: 3px solid #cda670;
+        position: relative;
+        border-radius: 18px;
+        top: 8px;
+        left: 11px;
+        width: 95%;
+        padding: 10px 20px;
+    }
+
+    .others-section .container .timeul>li {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+}
+
 .contact-section .card {
     background-color: white !important;
 }
@@ -676,6 +830,10 @@ html {
     padding: 10px;
     width: 100%;
 }
+
+
+
+
 
 .input-group-addon {
     padding: .5rem .75rem;
@@ -694,6 +852,8 @@ html {
 .input-group-addon:not(:last-child) {
     border-right: 0px;
 }
+
+
 
 .form-control+.input-group-addon:not(:first-child) {
     border-left: 0px;
@@ -765,3 +925,4 @@ html {
     bottom: 0;
     margin-bottom: 0;
 }
+
