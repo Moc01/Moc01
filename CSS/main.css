@@ -926,3 +926,23 @@ html {
     margin-bottom: 0;
 }
 
+.icon-insert {
+    padding: 20px 0;
+}
+
+.icon-insert img {
+    width: 32px;  /* Adjust size as needed */
+    height: 32px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.icon-insert a:hover img {
+    transform: scale(1.2);
+}
+
+/* Adjust tooltip position if needed */
+.my-tooltip .my-tooltiptext {
+    bottom: 160%;
+}
+
