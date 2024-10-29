@@ -1,4 +1,4 @@
-## Acknowldegement
+## Acknowledgement
 
 All data displayed is fake for privacy. For demo purpose only.
 This project is based on the following open-source libs and projects:
