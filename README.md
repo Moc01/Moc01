@@ -1,16 +1,18 @@
-## Hi there 👋
+## Acknowldegement
 
-<!--
-**Moc01/Moc01** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+All data displayed is fake for privacy. For demo purpose only.
+This project is based on the following open-source libs and projects:
 
-Here are some ideas to get you started:
+[Bootstrap · The most popular HTML, CSS, and JS library in the world. (getbootstrap.com)](https://getbootstrap.com/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[AOS - Animate on scroll library](http://michalsnik.github.io/aos/)
+
+[anime.js](https://www.animejs.cn/)
+
+[jQuery](https://jquery.com/)
+
+[resume](https://github.com/happysnaker/Resume)
+
+[burc-li/timeLine](https://github.com/burc-li/timeLine)
+
+[VincentGarreau/particles.js: A lightweight JavaScript library for creating particles (github.com)](https://github.com/VincentGarreau/particles.js)
