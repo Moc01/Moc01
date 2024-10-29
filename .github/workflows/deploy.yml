@@ -1,0 +1,42 @@
+# The name of the workflow - appears in GitHub Actions UI
+name: Deploy Portfolio Website   
+
+# Define when this workflow should run
+on:
+  # Trigger on push events                     
+  push:                       
+    # Only trigger for the main branch         
+    branches: [ main ]         
+  # Trigger on pull request events              
+  pull_request:               
+    # Only for PRs targeting the main branch         
+    branches: [ main ]         
+
+# Define the jobs to run
+jobs:                          
+  # Job name: build and deploy            
+  build-and-deploy:            
+    # Run on the latest Ubuntu virtual machine     
+    runs-on: ubuntu-latest     
+
+    # Define the sequence of steps for this job
+    steps:                     
+    # Step 1: Get a copy of the repository code      
+    - name: Checkout code      
+      uses: actions/checkout@v2 # Using version 2 of the checkout action
+      
+    # Step 2: Validate that all HTML is correctly formatted    
+    - name: Validate HTML     
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        # Check all files in the root directory              
+        root: .               
+        
+    # Step 3: Deploy the website to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        # Deploy to the gh-pages branch        
+        branch: gh-pages         
+        # Deploy everything in the root folder                
+        folder: .                
