@@ -1,35 +1,37 @@
-# The name of the workflow - appears in GitHub Actions UI
-name: Deploy Portfolio Website   
+# The name of the workflow
+name: Deploy Portfolio Website
 
-# Define when this workflow should run
+# Define when the workflow should run
 on:
-  # Trigger on push events                     
-  push:                       
-    # Only trigger for the main branch         
-    branches: [ main ]         
-  # Trigger on pull request events              
-  pull_request:               
-    # Only for PRs targeting the main branch         
-    branches: [ main ]         
+  push:                      # Trigger when code is pushed
+    branches: [ main ]       # Only trigger on pushes to the 'main' branch
+  pull_request:              # Trigger when a pull request is opened
+    branches: [ main ]       # Only for PRs targeting the 'main' branch
 
-# Define the jobs to run
-jobs:                          
-  # Job name: build and deploy            
-  build-and-deploy:            
-    # Run on the latest Ubuntu virtual machine     
-    runs-on: ubuntu-latest     
+# Define the jobs to run in this workflow
+jobs:
+  build-and-deploy:          # Job name
+    runs-on: ubuntu-latest   # The job runs on the latest Ubuntu environment
 
-    # Define the sequence of steps for this job
-    steps:                     
-    # Step 1: Get a copy of the repository code      
-    - name: Checkout code      
-      uses: actions/checkout@v2 # Using version 2 of the checkout action
-      
-    # Step 2: Deploy the website to GitHub Pages
+    # Steps define the sequence of actions to execute
+    steps:
+    # Step 1: Check out the repository code
+    - name: Checkout code
+      uses: actions/checkout@v3   # Use the latest version of the checkout action
+
+    # Step 2: Clean up any previous deployment files
+    - name: Clean up deployment directory
+      run: rm -rf github-pages-deploy-action-temp-deployment-folder  # Remove any leftover files
+
+    # Step 3: Deploy to GitHub Pages using the deployment action
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.1.5
+      uses: JamesIves/github-pages-deploy-action@4.4.3   # Use the latest version of the deploy action
       with:
-        # Deploy to the main branch        
-        branch: main     
-        # Deploy everything in the root folder                
-        folder: .                
+        branch: gh-pages              # Target branch for GitHub Pages
+        folder: .                     # Deploy everything in the root folder
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub Actions token
+
+# Notes:
+# - The 'env' section provides the token required for authentication
+# - The 'with' section specifies the deployment target branch and folder
